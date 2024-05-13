@@ -434,7 +434,8 @@ the export options. </p>
 <span><span class="co">#&gt; Project version: (20.06.2019 - 11:22:04 (CEST)) </span></span>
 <span><span class="co">#&gt; Exported with short names </span></span>
 <span><span class="co">#&gt; File extension: xls </span></span>
-<span><span class="co">#&gt; Seperator: ' '</span></span>
+<span><span class="co">#&gt; Enclosure: '\"'</span></span>
+<span><span class="co">#&gt; Seperator: '\t'</span></span>
 <span><span class="co">#&gt; 32 files exported</span></span>
 <span><span class="co">#&gt;   including 13 metadata tables</span></span>
 <span><span class="co">#&gt; Reference values exported - factorize possible</span></span>
@@ -467,19 +468,19 @@ Let’s assume you would like to know the <code>project_name</code> and
 descriptive enough to infer the contents. </p>
 <div class="sourceCode" id="cb15"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span><span class="fu"><a href="https://rdrr.io/r/base/names.html" class="external-link">names</a></span><span class="op">(</span><span class="va">ctu05_data</span><span class="op">$</span><span class="va">export_options</span><span class="op">)</span></span>
-<span><span class="co">#&gt;  [1] "sep"                "date_format"        "datetime_format"   </span></span>
-<span><span class="co">#&gt;  [4] "date_format_meta"   "na.strings"         "short_names"       </span></span>
-<span><span class="co">#&gt;  [7] "is_zip"             "is_rectangular"     "audit_trail"       </span></span>
-<span><span class="co">#&gt; [10] "column_names"       "lang_not_supported" "dict_items"        </span></span>
-<span><span class="co">#&gt; [13] "refvals_separate"   "add_id"             "lab_id"            </span></span>
-<span><span class="co">#&gt; [16] "meta_names"         "meta_available"     "duplicate_meta"    </span></span>
-<span><span class="co">#&gt; [19] "all_files"          "data_files"         "data_names"        </span></span>
-<span><span class="co">#&gt; [22] "file_end"           "extension"          "data_dir"          </span></span>
-<span><span class="co">#&gt; [25] "secuTrial_version"  "project_version"    "project_name"      </span></span>
-<span><span class="co">#&gt; [28] "format_info"        "time_of_export"     "encoding"          </span></span>
-<span><span class="co">#&gt; [31] "form_status"        "centre_info"        "hidden_fields"     </span></span>
-<span><span class="co">#&gt; [34] "structure"          "proj_setup"         "factorized"        </span></span>
-<span><span class="co">#&gt; [37] "dated"              "labelled"</span></span></code></pre></div>
+<span><span class="co">#&gt;  [1] "sep"                "quote"              "date_format"       </span></span>
+<span><span class="co">#&gt;  [4] "datetime_format"    "date_format_meta"   "na.strings"        </span></span>
+<span><span class="co">#&gt;  [7] "short_names"        "is_zip"             "is_rectangular"    </span></span>
+<span><span class="co">#&gt; [10] "audit_trail"        "column_names"       "lang_not_supported"</span></span>
+<span><span class="co">#&gt; [13] "dict_items"         "refvals_separate"   "add_id"            </span></span>
+<span><span class="co">#&gt; [16] "lab_id"             "meta_names"         "meta_available"    </span></span>
+<span><span class="co">#&gt; [19] "duplicate_meta"     "all_files"          "data_files"        </span></span>
+<span><span class="co">#&gt; [22] "data_names"         "file_end"           "extension"         </span></span>
+<span><span class="co">#&gt; [25] "data_dir"           "secuTrial_version"  "project_version"   </span></span>
+<span><span class="co">#&gt; [28] "project_name"       "format_info"        "time_of_export"    </span></span>
+<span><span class="co">#&gt; [31] "encoding"           "form_status"        "centre_info"       </span></span>
+<span><span class="co">#&gt; [34] "hidden_fields"      "structure"          "proj_setup"        </span></span>
+<span><span class="co">#&gt; [37] "factorized"         "dated"              "labelled"</span></span></code></pre></div>
 </div>
 </div>
 <div class="section level2">
